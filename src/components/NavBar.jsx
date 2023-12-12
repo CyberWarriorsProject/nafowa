@@ -1,54 +1,35 @@
 import React from "react";
 import { Breadcrumb, Layout, Menu, theme } from "antd";
+import { Link } from "react-router-dom";
 const { Header } = Layout;
-// const items = new Array(4).fill(null).map((_, index) => ({
-//   key: index + 1,
-//   label: `nav ${index + 1}`,
-// }));
-
-const items = [
-  {
-    key: 1,
-    label: "Home",
-  },
-  {
-    key: 2,
-    label: "About Us",
-  },
-  {
-    key: 3,
-    label: "What we do",
-  },
-  {
-    key: 4,
-    label: "Contact Us",
-  },
-];
 
 export const NavBar = () => {
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
   return (
-    <Layout>
-      <Header
-        style={{
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
-        <div className="demo-logo" />
-        <Menu
-          theme="dark"
-          mode="horizontal"
-          defaultSelectedKeys={["2"]}
-          items={items}
-          style={{
-            flex: 1,
-            minWidth: 0,
-          }}
+    <Header className="h-[80px] bg-white flex justify-between items-center ">
+      <div className="demo-logo h-full ">
+        <img
+          className="h-full object-contain "
+          src="/images/logo.jpeg"
+          alt=""
         />
-      </Header>
-    </Layout>
+      </div>
+      <Menu theme="light" mode="horizontal" defaultSelectedKeys={["1"]}>
+        <Menu.Item key={1}>
+          <Link to={"/"}>Home</Link>
+        </Menu.Item>
+        <Menu.Item key={2}>
+          <Link to={"/about"}>About Us</Link>
+        </Menu.Item>
+        <Menu.Item key={3}>
+          <Link to={"/services"}>What We Do</Link>
+        </Menu.Item>
+        <Menu.Item key={4}>
+          <Link to={"/contact"}>Contact Us</Link>
+        </Menu.Item>
+      </Menu>
+    </Header>
   );
 };

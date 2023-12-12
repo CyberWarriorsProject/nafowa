@@ -1,12 +1,17 @@
 import React from "react";
 import { NavBar } from "../components/NavBar";
 import { FooterSec } from "../components/Footer";
+import { Layout } from "antd";
+import { Outlet } from "react-router-dom";
 
 export const MainLayout = () => {
   return (
     <>
-      <NavBar />
-      <FooterSec />
+      <Layout>
+        <NavBar />
+        <Outlet />
+        <FooterSec />
+      </Layout>
     </>
   );
 };
