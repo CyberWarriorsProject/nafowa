@@ -1,5 +1,7 @@
 import { Carousel } from "antd";
 import React from "react";
+import { carouselData } from "../data";
+import SingleCarousel from "../components/SingleCarousel";
 
 const contentStyle = {
   color: "#fff",
@@ -12,45 +14,9 @@ export const Home = () => {
   return (
     <>
       <Carousel effect="fade" autoplay>
-        {/* slide 1 */}
-        <div className="relative" style={contentStyle}>
-          <h3 className="absolute text-white font-bold bottom-0 w-full h-20 text-center text-xl hidden md:block ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </h3>
-          <div>
-            <img src="/images/image1.png" alt="" />
-          </div>
-        </div>
-
-        {/* slide 2 */}
-        <div className="relative" style={contentStyle}>
-          <h3 className="absolute text-white font-bold bottom-0 w-full h-20 text-center text-xl hidden md:block ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </h3>
-          <div>
-            <img src="/images/image1.png" alt="" />
-          </div>
-        </div>
-
-        {/* slide 3 */}
-        <div className="relative" style={contentStyle}>
-          <h3 className="absolute text-white font-bold bottom-0 w-full h-20 text-center text-xl hidden md:block ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </h3>
-          <div>
-            <img src="/images/image1.png" alt="" />
-          </div>
-        </div>
-
-        {/* slide 4 */}
-        <div className="relative" style={contentStyle}>
-          <h3 className="absolute text-white font-bold bottom-0 w-full h-20 text-center text-xl hidden md:block ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </h3>
-          <div>
-            <img src="/images/image1.png" alt="" />
-          </div>
-        </div>
+        {carouselData.map((item) => (
+          <SingleCarousel {...item} key={item.slideID} />
+        ))}
       </Carousel>
     </>
   );
