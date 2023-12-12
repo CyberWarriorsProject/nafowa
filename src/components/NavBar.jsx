@@ -8,7 +8,7 @@ export const NavBar = () => {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
   return (
-    <Header className="h-[80px] bg-white flex justify-between items-center ">
+    <Header className="h-[80px] bg-white flex justify-between  items-center ">
       <div className="demo-logo h-full ">
         <img
           className="h-full object-contain "
@@ -16,7 +16,12 @@ export const NavBar = () => {
           alt=""
         />
       </div>
-      <Menu theme="light" mode="horizontal" defaultSelectedKeys={["1"]}>
+      <Menu
+        theme="light"
+        mode="horizontal"
+        className="min-w-0 justify-end flex-1" //Width not responsive
+        defaultSelectedKeys={["1"]}
+      >
         <Menu.Item key={1}>
           <Link to={"/"}>Home</Link>
         </Menu.Item>
