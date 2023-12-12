@@ -1,6 +1,6 @@
 # NAFOWA Documentation
 
-Welcome to the documentation for NAFOWA.com, the official website for the Non-Governmental Organization (NGO) NAFOWA (Name of NGO).
+Welcome to the documentation for NAFOWA.com, the official website for the Nigerian Air Force Officers Wives Association (NAFOWA) a Non-Governmental Organization (NGO)
 
 ## Table of Contents
 
