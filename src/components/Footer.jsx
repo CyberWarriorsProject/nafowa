@@ -9,7 +9,7 @@ export const FooterSec = () => {
         textAlign: "center",
       }}
     >
-      Ant Design ©2023 Created by Ant UED
+      Copyright © 2023 NAFOWA. Designed by NAF Alpha Devs.
     </Footer>
   );
 };
