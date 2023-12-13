@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         nafowaBlue: "#699393",
-        nafowaGold: "#47372E",
+        nafowaGold: "#CC9828",
       },
     },
 
