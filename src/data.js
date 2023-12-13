@@ -6,7 +6,8 @@ export const carouselData = [
   },
   {
     slideID: "2",
-    imgSrc: "/images/image1.png",
+    imgSrc:
+      "https://via.placeholder.com/1536x450/FF0000/FFFFFF?text=Custom+Text",
     description: " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
