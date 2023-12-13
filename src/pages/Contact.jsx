@@ -1,6 +1,3 @@
-import { Carousel } from "antd";
-import { carouselData } from "../data";
-import SingleCarousel from "../components/SingleCarousel";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -19,13 +16,6 @@ const onFinishFailed = (errorInfo) => {
 export const Contact = () => {
   return (
     <div>
-      <div className="">
-        {/* <Carousel effect="fade" autoplay>
-          {carouselData.map((item) => (
-            <SingleCarousel {...item} key={item.slideID} />
-          ))}
-        </Carousel> */}
-      </div>
       <div>
         <section>
           <h2>Get In touch with us</h2>
