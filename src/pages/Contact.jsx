@@ -1,6 +1,3 @@
-import { Carousel } from "antd";
-import { carouselData } from "../data";
-import SingleCarousel from "../components/SingleCarousel";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -8,6 +5,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { Button, Checkbox, Form, Input } from "antd";
+import { Carousel } from "antd";
 // import Map from "./Map";
 // import { Input } from "antd";
 const { TextArea } = Input;
@@ -61,6 +59,7 @@ export const Contact = () => {
               Consequatur, quisquam.
             </p>
           </div>
+
           <div className="flex gap-5 ">
             <FaFacebookSquare size={25} color="#699393" />{" "}
             <FaSquareInstagram color="#699393" size={25} />
