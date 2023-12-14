@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        nafowaBlue: "#699393",
-        nafowaGold: "#47372E",
+        nafowaBlue: "#08C1FF",
+        nafowaGold: "#CC9828",
       },
     },
 
@@ -15,4 +15,7 @@ export default {
     },
   },
   plugins: [],
+  corePlugins: {
+    preflight: false,
+  },
 };
