@@ -1,8 +1,17 @@
 import React from "react";
 import { whatWeDo } from "../data";
+import HeroOverlay from "../components/HeroOverlay";
+// import HeroOverlay from "./HeroOverlay";
+
 export const Services = () => {
   return (
     <>
+      <HeroOverlay
+        pageTitle={"Services"}
+        overlayURL={
+          "https://1.bp.blogspot.com/-akk1pth4xXI/X-JTa3TmmFI/AAAAAAACDAw/w6jayo_FAWgUrtGXKV4RmuopFDcFUMobwCNcBGAsYHQ/s16000/1.jpg"
+        }
+      />
       <section className="px-8 md:max-w-7xl sm:mx-auto">
         {whatWeDo.map((items) => (
           <section key={items.id}>
