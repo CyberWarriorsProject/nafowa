@@ -6,7 +6,6 @@ import { FaMapLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { Button, Form, Input } from "antd";
-import { Carousel } from "antd";
 import HeroOverlay from "../components/HeroOverlay";
 const { TextArea } = Input;
 
@@ -34,25 +33,7 @@ export const Contact = () => {
           "https://1.bp.blogspot.com/-akk1pth4xXI/X-JTa3TmmFI/AAAAAAACDAw/w6jayo_FAWgUrtGXKV4RmuopFDcFUMobwCNcBGAsYHQ/s16000/1.jpg"
         }
       />
-      {/* <div className="">
-        
-        <Carousel autoplay>
-          <div>
-            <h3 style={contentStyle}>1</h3>
-          </div>
-          <div>
-            <h3 style={contentStyle}>2</h3>
-          </div>
-          <div>
-            <h3 style={contentStyle}>3</h3>
-          </div>
-          <div>
-            <h3 style={contentStyle}>4</h3>
-          </div>
-        </Carousel>
-      </div>
 
-      {/* Contact Us page */}
       <div className="max-w-4xl mx-auto flex justify-around  gap-20 mt-6 p-6">
         <section className="flex flex-col gap-7">
           <div className="flex flex-col">
