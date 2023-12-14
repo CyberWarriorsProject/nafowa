@@ -8,12 +8,23 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { Button, Checkbox, Form, Input } from "antd";
+// import Map from "./Map";
+// import { Input } from "antd";
+const { TextArea } = Input;
 
 const onFinish = (values) => {
   console.log("Success:", values);
 };
 const onFinishFailed = (errorInfo) => {
   console.log("Failed:", errorInfo);
+};
+
+const contentStyle = {
+  height: "140px",
+  color: "#fff",
+  lineHeight: "160px",
+  textAlign: "center",
+  background: "#699393",
 };
 
 export const Contact = () => {
@@ -25,20 +36,37 @@ export const Contact = () => {
             <SingleCarousel {...item} key={item.slideID} />
           ))}
         </Carousel> */}
+
+        <Carousel autoplay>
+          <div>
+            <h3 style={contentStyle}>1</h3>
+          </div>
+          <div>
+            <h3 style={contentStyle}>2</h3>
+          </div>
+          <div>
+            <h3 style={contentStyle}>3</h3>
+          </div>
+          <div>
+            <h3 style={contentStyle}>4</h3>
+          </div>
+        </Carousel>
       </div>
-      <div>
-        <section>
-          <h2>Get In touch with us</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequatur, quisquam.
-          </p>
+      <div className="max-w-4xl mx-auto flex justify-around mt-6 p-6">
+        <section className="flex flex-col gap-7">
+          <div className="flex flex-col">
+            <h2>Get In touch with us</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, quisquam.
+            </p>
+          </div>
           <div className="flex gap-5 ">
             <FaFacebookSquare size={25} color="#699393" />{" "}
             <FaSquareInstagram color="#699393" size={25} />
             <FaSquareXTwitter color="#699393" size={25} />
           </div>
-          <div>
+          <div className="flex flex-col gap-3">
             <div>
               <BsFillTelephoneFill /> <span>+2349088596289</span>
             </div>
@@ -54,20 +82,11 @@ export const Contact = () => {
             </div>
           </div>
         </section>
-        <section>
+        <section className="w-full">
           <Form
             name="basic"
-            labelCol={{
-              span: 8,
-            }}
-            wrapperCol={{
-              span: 16,
-            }}
             style={{
-              maxWidth: 600,
-            }}
-            initialValues={{
-              remember: true,
+              maxWidth: "100%",
             }}
             onFinish={onFinish}
             onFinishFailed={onFinishFailed}
@@ -75,7 +94,6 @@ export const Contact = () => {
           >
             <Form.Item
               name="username"
-              // placeholder="input placeholder"
               rules={[
                 {
                   required: true,
@@ -87,36 +105,34 @@ export const Contact = () => {
             </Form.Item>
 
             <Form.Item
-              // label="Password"
-              name="email"
+              name={["user", "email"]}
+              // label="Email"
               rules={[
                 {
-                  required: true,
-                  message: "Please input your password!",
+                  type: "email",
                 },
               ]}
             >
               <Input placeholder="Email" />
             </Form.Item>
-
-            <Form.Item>
-              <Input.TextArea rows={8} placeholder="Messages" />
+            <Form.Item name="message">
+              <TextArea rows={8} placeholder="Messages" />
             </Form.Item>
 
-            <Form.Item
-              wrapperCol={{
-                offset: 8,
-                span: 8,
-              }}
-              style={{ maxWidth: "100%" }}
-            >
-              <Button type="primary" className="bor" block>
-                Primary
+            <Form.Item>
+              <Button className="bg-nafowaBlue" block>
+                Send
               </Button>
             </Form.Item>
           </Form>
         </section>
       </div>
+      {/*  <div style={{ height: "500px", width: "100%" }}>
+        <Map
+          containerElement={<div style={{ height: "100%" }} />}
+          mapElement={<div style={{ height: "100%" }} />}
+        />
+      </div> */}
     </div>
   );
 };
