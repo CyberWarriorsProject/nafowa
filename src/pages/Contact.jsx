@@ -2,6 +2,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import { FaMapLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { Button, Form, Input } from "antd";
@@ -42,10 +43,12 @@ export const Contact = () => {
           </div>
         </Carousel>
       </div>
-      <div className="max-w-4xl mx-auto flex justify-around mt-6 p-6">
+
+      {/* Contact Us page */}
+      <div className="max-w-4xl mx-auto flex justify-around  gap-20 mt-6 p-6">
         <section className="flex flex-col gap-7">
           <div className="flex flex-col">
-            <h2>Get In touch with us</h2>
+            <h2 className="text-3xl">Get In Touch With Us</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequatur, quisquam.
@@ -53,22 +56,44 @@ export const Contact = () => {
           </div>
 
           <div className="flex gap-5 ">
-            <FaFacebookSquare size={25} color="#699393" />{" "}
+            <a href="" target="_blank" className="text-black cursor-progress">
+              <FaFacebookSquare size={25} color="#699393" />
+            </a>{" "}
             <FaSquareInstagram color="#699393" size={25} />
             <FaSquareXTwitter color="#699393" size={25} />
           </div>
           <div className="flex flex-col gap-3">
             <div>
-              <BsFillTelephoneFill /> <span>+2349088596289</span>
+              <BsFillTelephoneFill />{" "}
+              <span className="ml-1">
+                <a
+                  href="tel:+2349088596289"
+                  className="text-black cursor-progress"
+                >
+                  +2349088596289
+                </a>
+              </span>{" "}
             </div>
             <div>
-              <MdEmail /> <span>office@nafowa.org</span>
+              <MdEmail /> <span className="ml-1">office@nafowa.org</span>
             </div>
             <div>
               <FaLocationDot />{" "}
-              <span>
+              <span className="ml-1">
                 NAFOWA National Secretariat No 4 Dame Patience Goodluck Jonathan
                 Road After Command Guest House
+              </span>
+            </div>
+            <div>
+              <FaMapLocationDot />{" "}
+              <span className="ml-1">
+                <a
+                  href="https://maps.app.goo.gl/rDHNG1JNTTnRauT26"
+                  target="_blank"
+                  className="text-black cursor-progress"
+                >
+                  Open Google Maps
+                </a>
               </span>
             </div>
           </div>
@@ -111,7 +136,7 @@ export const Contact = () => {
             </Form.Item>
 
             <Form.Item>
-              <Button className="bg-nafowaBlue" block>
+              <Button className="bg-nafowaBlue text-white font-semibold" block>
                 Send
               </Button>
             </Form.Item>
