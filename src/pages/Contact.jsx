@@ -4,10 +4,8 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
-import { Button, Checkbox, Form, Input } from "antd";
+import { Button, Form, Input } from "antd";
 import { Carousel } from "antd";
-// import Map from "./Map";
-// import { Input } from "antd";
 const { TextArea } = Input;
 
 const onFinish = (values) => {
@@ -29,12 +27,6 @@ export const Contact = () => {
   return (
     <div>
       <div className="">
-        {/* <Carousel effect="fade" autoplay>
-          {carouselData.map((item) => (
-            <SingleCarousel {...item} key={item.slideID} />
-          ))}
-        </Carousel> */}
-
         <Carousel autoplay>
           <div>
             <h3 style={contentStyle}>1</h3>
@@ -126,12 +118,6 @@ export const Contact = () => {
           </Form>
         </section>
       </div>
-      {/*  <div style={{ height: "500px", width: "100%" }}>
-        <Map
-          containerElement={<div style={{ height: "100%" }} />}
-          mapElement={<div style={{ height: "100%" }} />}
-        />
-      </div> */}
     </div>
   );
 };
