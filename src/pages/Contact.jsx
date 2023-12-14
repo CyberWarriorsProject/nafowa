@@ -6,6 +6,7 @@ import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { Button, Form, Input } from "antd";
 import { Carousel } from "antd";
+import HeroOverlay from "../components/HeroOverlay";
 const { TextArea } = Input;
 
 const onFinish = (values) => {
@@ -26,7 +27,14 @@ const contentStyle = {
 export const Contact = () => {
   return (
     <div>
-      <div className="">
+      <HeroOverlay
+        pageTitle={"Contact Us"}
+        overlayURL={
+          "https://1.bp.blogspot.com/-akk1pth4xXI/X-JTa3TmmFI/AAAAAAACDAw/w6jayo_FAWgUrtGXKV4RmuopFDcFUMobwCNcBGAsYHQ/s16000/1.jpg"
+        }
+      />
+      {/* <div className="">
+        
         <Carousel autoplay>
           <div>
             <h3 style={contentStyle}>1</h3>
@@ -41,7 +49,7 @@ export const Contact = () => {
             <h3 style={contentStyle}>4</h3>
           </div>
         </Carousel>
-      </div>
+      </div> */}
       <div className="max-w-4xl mx-auto flex justify-around mt-6 p-6">
         <section className="flex flex-col gap-7">
           <div className="flex flex-col">
