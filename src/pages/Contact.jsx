@@ -59,7 +59,7 @@ export const Contact = () => {
                   href="tel:+2349088596289"
                   className="text-black cursor-progress"
                 >
-                  +2349088596289
+                  +234-908-859-6289
                 </a>
               </span>{" "}
             </div>
