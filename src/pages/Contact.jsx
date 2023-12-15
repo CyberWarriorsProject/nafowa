@@ -8,6 +8,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { Button, Form, Input } from "antd";
 import HeroOverlay from "../components/HeroOverlay";
 const { TextArea } = Input;
+import styled from "styled-components";
 
 const onFinish = (values) => {
   console.log("Success:", values);
@@ -24,6 +25,13 @@ const contentStyle = {
   background: "#699393",
 };
 
+const GradientInstagramIcon = styled(FaSquareInstagram)`
+  background: linear-gradient(to right, #e0b0ff, #ff4500);
+
+  border-radius: 5px;
+`;
+
+
 export const Contact = () => {
   return (
     <div>
@@ -34,8 +42,8 @@ export const Contact = () => {
         }
       />
 
-      <div className="max-w-4xl mx-auto flex justify-around  gap-20 mt-6 p-6">
-        <section className="flex flex-col gap-7">
+      <div className="max-w-4xl mx-auto flex flex-justify-around  gap-20 mt-6 p-6 flex-col md:w-full md:flex-row ">
+        <section className="flex flex-col gap-7 ">
           <div className="flex flex-col">
             <h2 className="text-3xl">Get In Touch With Us</h2>
             <p>
@@ -45,11 +53,23 @@ export const Contact = () => {
           </div>
 
           <div className="flex gap-5 ">
-            <a href="" target="_blank" className="text-black cursor-progress">
-              <FaFacebookSquare size={25} color="#699393" />
+            <a
+              href="https://www.facebook.com/nafowasec/"
+              target="_blank"
+              className="text-black cursor-progress"
+            >
+              <FaFacebookSquare
+                size={25}
+                color="#0000cd"
+                borderRradius="5px;"
+              />
             </a>{" "}
-            <FaSquareInstagram color="#699393" size={25} />
-            <FaSquareXTwitter color="#699393" size={25} />
+            <a href="" target="_blank" className="text-black cursor-progress">
+              <GradientInstagramIcon color="" size={25} />
+            </a>
+            <a href="" target="_blank" className="text-black cursor-progress">
+              <FaSquareXTwitter color="#1b1b1b" size={25} />
+            </a>
           </div>
           <div className="flex flex-col gap-3">
             <div>
