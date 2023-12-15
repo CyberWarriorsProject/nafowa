@@ -1,8 +1,7 @@
-import { Avatar, Button, Card, Carousel, Image } from "antd";
+import { Avatar, Button, Card, Carousel, ConfigProvider, Image } from "antd";
 import React from "react";
 import { carouselData, whatWeDo } from "../../data";
 import SingleCarousel from "../../components/SingleCarousel";
-import Meta from "antd/es/card/Meta";
 
 const contentStyle = {
   color: "#fff",
@@ -22,15 +21,21 @@ export const Home = () => {
 
       {/* presidents section */}
       <section>
-        <div className="max-w-4xl mx-auto flex gap-10 items-center my-20">
-          <div>
-            <Image width={200} src="https://placehold.jp/x150.png" />
-            <h2>NAFOWA PRESIDENT</h2>
+        <div className="w-full mx-auto flex gap-32 items-center px-10 shadow-sm h-[400px]  shadow-lighterNafowaBlue  my-20">
+          <div className="relative h-full">
+            <Image
+              width={400}
+              className="h-full"
+              src="https://placehold.jp/08C1FF/000000/150x150.png?text=PlaceHolder"
+            />
+            <h2 className="text-white w-full text-center pt-10 absolute    bottom-0 z-10 font-bold">
+              NAFOWA PRESIDENT
+            </h2>
           </div>
 
-          <div>
-            <h2>WELCOME HERE</h2>
-            <p>
+          <div className="w-[70%] space-y-10">
+            <h2 className="text-nafowaBlue">WELCOME HERE</h2>
+            <p className="text-justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
               rem? Sed dolor, tempora ducimus sint, voluptates molestiae rem
               commodi autem possimus aliquid qui temporibus a nobis obcaecati
@@ -40,41 +45,67 @@ export const Home = () => {
               molestias ullam neque blanditiis? Eos iure sint officia expedita
               facere, sed eveniet.
             </p>
-            <Button type="primary" className="bg-nafowaBlue">
-              Read more
-            </Button>
+            <Button type="primary">Read more</Button>
           </div>
         </div>
       </section>
 
       {/* what we do section */}
 
-      <section>
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-xl ">WHAT WE DO</h2>
-          <p></p>
-          <div className="flex justify-center items-center gap-10">
+      <section className="my-20 px-10">
+        <div className="w-full space-y-5 mx-auto">
+          <h2 className="text-xl text-nafowaBlue font-bold">WHAT WE DO</h2>
+          <p className=" text-lg ">
+            NAFOWA provides a wide range of services to NAF personnel and their
+            families, including:
+          </p>
+          <div className="flex justify-center flex-wrap gap-5">
             {whatWeDo.map((item) => {
               return (
                 <Card
-                  style={{
-                    width: 700,
-                  }}
+                  hoverable
+                  key={item.id}
+                  className="hover:shadow-lighterNafowaBlue border-lighterNafowaBlue hover:shadow-md w-[300px] "
                   size="small"
                   cover={<img alt="example" src={item.imgSrc} />}
                 >
                   <h2
                     title={item.heading}
-                    className="text-md font-bold  line-clamp-1"
+                    className="text-md font-bold text-nafowaBlue  line-clamp-1"
                   >
                     {item.heading}
                   </h2>
                   <p className="line-clamp-3">{item.content}</p>
-                  <Button> Read more</Button>
+                  <Button type="link" className="text-nafowaBlue">
+                    Read more
+                  </Button>
                 </Card>
               );
             })}
           </div>
+        </div>
+      </section>
+
+      <section className="mt-20 bg-lighterNafowaBlue h-[500px] flex items-center justify-center">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-xl font-bold">HOW WE DO IT</h2>
+          <p className="text-lg">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
+            itaque, neque excepturi temporibus obcaecati nulla ex laboriosam in
+            quidem ducimus doloribus eum repellendus expedita non recusandae
+            facilis ratione nemo id! Unde praesentium, aliquid dolore illo
+            numquam doloribus accusantium repudiandae blanditiis quidem nam ad
+            itaque? Blanditiis nobis assumenda cum, similique tempore nisi
+            deserunt quia expedita necessitatibus temporibus voluptatibus eaque
+            itaque dolores! Laborum nihil tempora tenetur aut, cupiditate
+            inventore sint dignissimos perspiciatis. Odit error autem sed nihil
+            hic architecto, aliquid odio dolorum ipsa, unde asperiores deleniti
+            magnam similique cupiditate velit corporis quam. Repudiandae,
+            deserunt amet unde a neque similique quos ex debitis, perferendis
+            odit cumque voluptatem non voluptatibus assumenda corrupti explicabo
+            nostrum iste. Illo, quam magni. Molestiae sit enim quidem laboriosam
+            corporis.
+          </p>
         </div>
       </section>
     </>
