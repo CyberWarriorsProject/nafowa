@@ -1,7 +1,6 @@
 import React from "react";
 import { whatWeDo } from "../data";
 import HeroOverlay from "../components/HeroOverlay";
-// import HeroOverlay from "./HeroOverlay";
 
 export const Services = () => {
   return (
@@ -19,7 +18,7 @@ export const Services = () => {
               {/* This is the heading element */}
               <h1 className="text-4xl font-bold">{items.heading}</h1>
               {/* this is the paragraph div */}
-              <div className="w-full sm:w-9/12 text-lg text-justify">
+              <div className="w-full sm:w-9/12 text-justify">
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Aspernatur cupiditate veniam rem tenetur, qui a cum ad, ipsa

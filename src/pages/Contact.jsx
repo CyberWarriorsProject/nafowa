@@ -1,5 +1,5 @@
 import { FaFacebookSquare } from "react-icons/fa";
-import { FaSquareInstagram } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaMapLocationDot } from "react-icons/fa6";
@@ -7,8 +7,8 @@ import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { Button, Form, Input } from "antd";
 import HeroOverlay from "../components/HeroOverlay";
-const { TextArea } = Input;
 import styled from "styled-components";
+const { TextArea } = Input;
 
 const onFinish = (values) => {
   console.log("Success:", values);
@@ -17,20 +17,10 @@ const onFinishFailed = (errorInfo) => {
   console.log("Failed:", errorInfo);
 };
 
-const contentStyle = {
-  height: "140px",
-  color: "#fff",
-  lineHeight: "160px",
-  textAlign: "center",
-  background: "#699393",
-};
-
-const GradientInstagramIcon = styled(FaSquareInstagram)`
+const GradientInstagramIcon = styled(FaInstagram)`
   background: linear-gradient(to right, #e0b0ff, #ff4500);
-
   border-radius: 5px;
 `;
-
 
 export const Contact = () => {
   return (
@@ -56,7 +46,7 @@ export const Contact = () => {
             <a
               href="https://www.facebook.com/nafowasec/"
               target="_blank"
-              className="text-black cursor-progress"
+              className="text-black cursor-pointer"
             >
               <FaFacebookSquare
                 size={25}
@@ -64,10 +54,14 @@ export const Contact = () => {
                 borderRradius="5px;"
               />
             </a>{" "}
-            <a href="" target="_blank" className="text-black cursor-progress">
-              <GradientInstagramIcon color="" size={25} />
+            <a
+              href=""
+              target="_blank"
+              className="text-white cursor-pointer hover:text-white "
+            >
+              <GradientInstagramIcon size={25} />
             </a>
-            <a href="" target="_blank" className="text-black cursor-progress">
+            <a href="" target="_blank" className="text-black cursor-pointer">
               <FaSquareXTwitter color="#1b1b1b" size={25} />
             </a>
           </div>
@@ -131,7 +125,6 @@ export const Contact = () => {
 
             <Form.Item
               name={["user", "email"]}
-              // label="Email"
               rules={[
                 {
                   type: "email",

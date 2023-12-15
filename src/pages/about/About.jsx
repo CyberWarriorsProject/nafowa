@@ -1,5 +1,4 @@
 import React from "react";
-import { MdRocketLaunch } from "react-icons/md";
 import HeroOverlay from "../../components/HeroOverlay";
 import Vision from "./Vision";
 import AboutUs from "./AboutUs";
