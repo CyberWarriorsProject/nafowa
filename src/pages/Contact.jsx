@@ -34,8 +34,8 @@ export const Contact = () => {
         }
       />
 
-      <div className="max-w-4xl mx-auto flex justify-around  gap-20 mt-6 p-6">
-        <section className="flex flex-col gap-7">
+      <div className="max-w-4xl mx-auto flex flex-justify-around  gap-20 mt-6 p-6 flex-col md:w-full md:flex-row ">
+        <section className="flex flex-col gap-7 ">
           <div className="flex flex-col">
             <h2 className="text-3xl">Get In Touch With Us</h2>
             <p>
