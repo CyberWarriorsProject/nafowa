@@ -6,6 +6,7 @@ export default {
       colors: {
         nafowaBlue: "#08C1FF",
         nafowaGold: "#CC9828",
+        lighterNafowaBlue: "#8ee3ff",
       },
     },
 
