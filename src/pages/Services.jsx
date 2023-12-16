@@ -15,7 +15,7 @@ export const Services = () => {
           "https://1.bp.blogspot.com/-akk1pth4xXI/X-JTa3TmmFI/AAAAAAACDAw/w6jayo_FAWgUrtGXKV4RmuopFDcFUMobwCNcBGAsYHQ/s16000/1.jpg"
         }
       />
-      <section className="px-8 md:max-w-7xl sm:mx-auto">
+      <section className="px-8 md:max-w-7xl sm:mx-auto my-8">
         {whatWeDo.map((items) => (
           <section key={items.id}>
             <div className="max-w-4xl">
@@ -44,7 +44,7 @@ export const Services = () => {
               }}
               navigation={true}
               modules={[Autoplay, Navigation]}
-              className="mySwiper mx-auto px-16 text-center max-w-7xl"
+              className="mySwiper my-12 px-16 text-center max-w-7xl "
               slidesPerView={1}
               breakpoints={{
                 660: {
