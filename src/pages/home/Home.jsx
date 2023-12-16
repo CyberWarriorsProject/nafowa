@@ -1,14 +1,7 @@
-import { Avatar, Button, Card, Carousel, ConfigProvider, Image } from "antd";
+import { Button, Card, Carousel, Image } from "antd";
 import React from "react";
 import { carouselData, whatWeDo } from "../../data";
 import SingleCarousel from "../../components/SingleCarousel";
-
-const contentStyle = {
-  color: "#fff",
-  lineHeight: "160px",
-  textAlign: "center",
-  background: "#364d79",
-};
 
 export const Home = () => {
   return (
@@ -20,39 +13,36 @@ export const Home = () => {
       </Carousel>
 
       {/* presidents section */}
-      <section>
-        <div className="w-full mx-auto flex gap-32 items-center px-10 shadow-sm h-[400px]  shadow-lighterNafowaBlue  my-20">
-          <div className="relative h-full">
-            <Image
-              width={400}
-              className="h-full"
-              src="https://placehold.jp/08C1FF/000000/150x150.png?text=PlaceHolder"
-            />
-            <h2 className="text-white w-full text-center pt-10 absolute    bottom-0 z-10 font-bold">
-              NAFOWA PRESIDENT
-            </h2>
-          </div>
+      <section className="w-full mx-auto flex flex-col sm:flex-row gap-32 items-center p-8   shadow-sm  shadow-lighterNafowaBlue my-12 ">
+        <div className="relative h-full">
+          <Image
+            width={400}
+            className="h-full"
+            src="https://placehold.jp/08C1FF/000000/400x400.png?text=President"
+          />
+          <h3 className="text-white w-full text-center pt-10 absolute bottom-0 z-10 font-semibold">
+            NAFOWA PRESIDENT
+          </h3>
+        </div>
 
-          <div className="w-[70%] space-y-10">
-            <h2 className="text-nafowaBlue">WELCOME HERE</h2>
-            <p className="text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-              rem? Sed dolor, tempora ducimus sint, voluptates molestiae rem
-              commodi autem possimus aliquid qui temporibus a nobis obcaecati
-              facere error cupiditate! Blanditiis, hic? Harum repellendus
-              laborum vitae sapiente. Dolor eius at, tenetur suscipit
-              repudiandae illum provident debitis similique, voluptatum
-              molestias ullam neque blanditiis? Eos iure sint officia expedita
-              facere, sed eveniet.
-            </p>
-            <Button type="primary">Read more</Button>
-          </div>
+        <div className="w-[70%] space-y-10">
+          <h2 className="text-nafowaBlue">WELCOME HERE</h2>
+          <p className="text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, rem?
+            Sed dolor, tempora ducimus sint, voluptates molestiae rem commodi
+            autem possimus aliquid qui temporibus a nobis obcaecati facere error
+            cupiditate! Blanditiis, hic? Harum repellendus laborum vitae
+            sapiente. Dolor eius at, tenetur suscipit repudiandae illum
+            provident debitis similique, voluptatum molestias ullam neque
+            blanditiis? Eos iure sint officia expedita facere, sed eveniet.
+          </p>
+          <Button type="primary">Read more</Button>
         </div>
       </section>
 
       {/* what we do section */}
 
-      <section className="my-20 px-10">
+      <section className="my-8 px-10">
         <div className="w-full space-y-5 mx-auto">
           <h2 className="text-xl text-nafowaBlue font-bold">WHAT WE DO</h2>
           <p className=" text-lg ">
@@ -86,7 +76,7 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="mt-20 bg-lighterNafowaBlue h-[500px] flex items-center justify-center">
+      <section className="mt-20 bg-lighterNafowaBlue h-[500px] flex items-center justify-center ">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-xl font-bold">HOW WE DO IT</h2>
           <p className="text-lg">
