@@ -17,10 +17,10 @@ const onFinishFailed = (errorInfo) => {
   console.log("Failed:", errorInfo);
 };
 
-const GradientInstagramIcon = styled(FaInstagram)`
-  background: linear-gradient(to right, #e0b0ff, #ff4500);
-  border-radius: 5px;
-`;
+// const GradientInstagramIcon = styled(FaInstagram)`
+//   background: linear-gradient(to right, #e0b0ff, #ff4500);
+//   border-radius: 5px;
+// `;
 
 export const Contact = () => {
   return (
@@ -59,7 +59,7 @@ export const Contact = () => {
               target="_blank"
               className="text-white cursor-pointer hover:text-white "
             >
-              <GradientInstagramIcon size={25} />
+              <FaInstagram color="red" size={25} />
             </a>
             <a href="" target="_blank" className="text-black cursor-pointer">
               <FaSquareXTwitter color="#1b1b1b" size={25} />

@@ -1,6 +1,10 @@
 import React from "react";
 import { whatWeDo } from "../data";
 import HeroOverlay from "../components/HeroOverlay";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
 export const Services = () => {
   return (
@@ -30,24 +34,76 @@ export const Services = () => {
                 </p>
               </div>
             </div>
+            <Swiper
+              loop={true}
+              spaceBetween={20}
+              centeredSlides={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              navigation={true}
+              modules={[Autoplay, Navigation]}
+              className="mySwiper mx-auto px-16 text-center max-w-7xl"
+              slidesPerView={1}
+              breakpoints={{
+                660: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
 
-            <div className="flex flex-wrap my-8 gap-6 w-full justify-center object-contain">
-              <img
-                src="https://placehold.co/300x350/skyblue/white"
-                alt=""
-                className="object-contain rounded-2xl"
-              />
-              <img
-                src="https://placehold.co/300x350/skyblue/white"
-                alt=""
-                className="object-contain rounded-2xl"
-              />
-              <img
-                src="https://placehold.co/300x350/skyblue/white"
-                alt=""
-                className="object-contain rounded-2xl"
-              />
-            </div>
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 50,
+                },
+              }}
+              style={{
+                "--swiper-navigation-color": "black",
+              }}
+            >
+              <SwiperSlide>
+                <img
+                  src="https://placehold.co/300x350/skyblue/white"
+                  alt=""
+                  className="object-contain rounded-2xl"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src="https://placehold.co/300x350/skyblue/white"
+                  alt=""
+                  className="object-contain rounded-2xl"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src="https://placehold.co/300x350/skyblue/white"
+                  alt=""
+                  className="object-contain rounded-2xl"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src="https://placehold.co/300x350/skyblue/white"
+                  alt=""
+                  className="object-contain rounded-2xl"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src="https://placehold.co/300x350/skyblue/white"
+                  alt=""
+                  className="object-contain rounded-2xl"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src="https://placehold.co/300x350/skyblue/white"
+                  alt=""
+                  className="object-contain rounded-2xl"
+                />
+              </SwiperSlide>
+            </Swiper>
           </section>
         ))}
       </section>
