@@ -57,7 +57,16 @@ export const Home = () => {
                   key={item.id}
                   className="hover:shadow-lighterNafowaBlue border-lighterNafowaBlue hover:shadow-md w-[300px] "
                   size="small"
-                  cover={<img alt="example" src={item.imgSrc} />}
+                  cover={
+                    <img
+                      alt="example"
+                      src={
+                        item.imgSrc[
+                          Math.floor(Math.random() * item.imgSrc.length)
+                        ].link
+                      }
+                    />
+                  }
                 >
                   <h2
                     title={item.heading}

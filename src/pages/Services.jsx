@@ -37,14 +37,14 @@ export const Services = () => {
             <Swiper
               loop={true}
               spaceBetween={20}
-              centeredSlides={true}
+              // centeredSlides={true}
               autoplay={{
                 delay: 2500,
                 disableOnInteraction: false,
               }}
               navigation={true}
               modules={[Autoplay, Navigation]}
-              className="mySwiper my-12 px-16 text-center max-w-7xl "
+              className="mySwiper my-12 px-16 text-center max-w-7xl border-4 border-red-700"
               slidesPerView={1}
               breakpoints={{
                 660: {
@@ -61,48 +61,15 @@ export const Services = () => {
                 "--swiper-navigation-color": "black",
               }}
             >
-              <SwiperSlide>
-                <img
-                  src="https://placehold.co/300x350/skyblue/white"
-                  alt=""
-                  className="object-contain rounded-2xl"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src="https://placehold.co/300x350/skyblue/white"
-                  alt=""
-                  className="object-contain rounded-2xl"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src="https://placehold.co/300x350/skyblue/white"
-                  alt=""
-                  className="object-contain rounded-2xl"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src="https://placehold.co/300x350/skyblue/white"
-                  alt=""
-                  className="object-contain rounded-2xl"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src="https://placehold.co/300x350/skyblue/white"
-                  alt=""
-                  className="object-contain rounded-2xl"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src="https://placehold.co/300x350/skyblue/white"
-                  alt=""
-                  className="object-contain rounded-2xl"
-                />
-              </SwiperSlide>
+              {items.imgSrc.map((imgItem) => (
+                <SwiperSlide key={imgItem.link}>
+                  <img
+                    src={imgItem.link}
+                    alt={imgItem.alt}
+                    className="object-contain rounded-2xl w-full"
+                  />
+                </SwiperSlide>
+              ))}
             </Swiper>
           </section>
         ))}
