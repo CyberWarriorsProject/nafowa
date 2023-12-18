@@ -7,7 +7,6 @@ import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { Button, Form, Input } from "antd";
 import HeroOverlay from "../components/HeroOverlay";
-import styled from "styled-components";
 const { TextArea } = Input;
 
 const onFinish = (values) => {
@@ -16,11 +15,6 @@ const onFinish = (values) => {
 const onFinishFailed = (errorInfo) => {
   console.log("Failed:", errorInfo);
 };
-
-// const GradientInstagramIcon = styled(FaInstagram)`
-//   background: linear-gradient(to right, #e0b0ff, #ff4500);
-//   border-radius: 5px;
-// `;
 
 export const Contact = () => {
   return (
