@@ -23,15 +23,7 @@ export const Services = () => {
               <h1 className="text-4xl font-bold">{items.heading}</h1>
               {/* this is the paragraph div */}
               <div className="w-full sm:w-9/12 text-justify">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur cupiditate veniam rem tenetur, qui a cum ad, ipsa
-                  delectus quisquam quia natus. Unde, harum veritatis ratione
-                  distinctio alias blanditiis quibusdam. Nesciunt iure natus
-                  minus aperiam quos cum minima a! Sit dolores dicta aut nisi
-                  vitae amet laudantium error, tenetur adipisci voluptas minus
-                  nulla minima quisquam sequi nam aliquid iusto totam!
-                </p>
+                <p>{items.content}</p>
               </div>
             </div>
             <Swiper

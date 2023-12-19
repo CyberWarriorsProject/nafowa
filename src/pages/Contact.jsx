@@ -69,29 +69,30 @@ export const Contact = () => {
                 >
                   +234-908-859-6289
                 </a>
-              </span>{" "}
+              </span>
             </div>
             <div>
               <MdEmail /> <span className="ml-1">office@nafowa.org</span>
             </div>
             <div>
               <FaLocationDot />{" "}
-              <span className="ml-1">
-                NAFOWA National Secretariat No 4 Dame Patience Goodluck Jonathan
-                Road After Command Guest House
-              </span>
+              <a
+                href="https://maps.app.goo.gl/rDHNG1JNTTnRauT26"
+                target="_blank"
+                className="text-black cursor-pointer"
+              >
+                <span className="ml-1">
+                  NAFOWA National Secretariat No 4 Dame Patience Goodluck
+                  Jonathan Road After Command Guest House
+                </span>
+              </a>
             </div>
+
             <div>
-              <FaMapLocationDot />{" "}
-              <span className="ml-1">
-                <a
-                  href="https://maps.app.goo.gl/rDHNG1JNTTnRauT26"
-                  target="_blank"
-                  className="text-black cursor-progress"
-                >
-                  Open Google Maps
-                </a>
-              </span>
+              <h4>BRANCHES</h4>
+              <p className="mt-2">
+                NAFOWA has branches across all NAF bases in Nigeria.
+              </p>
             </div>
           </div>
         </section>

@@ -21,25 +21,19 @@ export default function Vision() {
     <div className="flex flex-col lg:flex-row gap-5 md:gap-10 mx-2 md:max-w-7xl sm:mx-auto py-5 items-center justify-around mt-16">
       <Mission
         title="Vision"
-        description=" Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsa
-          est accusamus in incidunt iusto dolor optio nemo nesciunt placeat,
-          magni magnam praesentium provident. Labore dicta consequuntur"
+        description=" To be a leading organization (in) empowering women and contributing to the overall well-being of the (NAF) community"
       >
         <FaHandHoldingHeart className="text-[50px] text-center text-nafowaBlue" />
       </Mission>
       <Mission
         title="Mission"
-        description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsa
-          est accusamus in incidunt iusto dolor optio nemo nesciunt placeat,
-          magni magnam praesentium provident. Labore dicta consequuntur"
+        description="To provide support, welfare services, and the overall development of NAF personnels with their families"
       >
         <HiOutlineLightBulb className="text-[50px] text-center text-nafowaBlue" />
       </Mission>
       <Mission
         title="Core Values"
-        description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsa
-          est accusamus in incidunt iusto dolor optio nemo nesciunt placeat,
-          magni magnam praesentium provident. Labore dicta consequuntur"
+        description="Our core values are Transparency, Compassion and Service to Humanity"
       >
         <HiOutlineLightBulb className="text-[50px] text-center text-nafowaBlue" />
       </Mission>

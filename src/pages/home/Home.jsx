@@ -45,10 +45,10 @@ export const Home = () => {
       <section className="my-8 px-10">
         <div className="w-full space-y-5 mx-auto">
           <h2 className="text-xl text-nafowaBlue font-bold">WHAT WE DO</h2>
-          <p className=" text-lg ">
+          {/* <p className=" text-lg ">
             NAFOWA provides a wide range of services to NAF personnel and their
             families, including:
-          </p>
+          </p> */}
           <div className="flex justify-center flex-wrap gap-5">
             {whatWeDo.map((item) => {
               return (
@@ -89,21 +89,10 @@ export const Home = () => {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-xl font-bold">HOW WE DO IT</h2>
           <p className="text-lg">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
-            itaque, neque excepturi temporibus obcaecati nulla ex laboriosam in
-            quidem ducimus doloribus eum repellendus expedita non recusandae
-            facilis ratione nemo id! Unde praesentium, aliquid dolore illo
-            numquam doloribus accusantium repudiandae blanditiis quidem nam ad
-            itaque? Blanditiis nobis assumenda cum, similique tempore nisi
-            deserunt quia expedita necessitatibus temporibus voluptatibus eaque
-            itaque dolores! Laborum nihil tempora tenetur aut, cupiditate
-            inventore sint dignissimos perspiciatis. Odit error autem sed nihil
-            hic architecto, aliquid odio dolorum ipsa, unde asperiores deleniti
-            magnam similique cupiditate velit corporis quam. Repudiandae,
-            deserunt amet unde a neque similique quos ex debitis, perferendis
-            odit cumque voluptatem non voluptatibus assumenda corrupti explicabo
-            nostrum iste. Illo, quam magni. Molestiae sit enim quidem laboriosam
-            corporis.
+            NAFOWA relies on its dedicated members and hardworking volunteers to
+            carry out its mission. The association also partners with NAFHQ and
+            other organizations within and outside of the country to achieve its
+            goals
           </p>
         </div>
       </section>
