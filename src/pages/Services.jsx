@@ -22,7 +22,7 @@ export const Services = () => {
               {/* This is the heading element */}
               <h1 className="text-4xl font-bold">{items.heading}</h1>
               {/* this is the paragraph div */}
-              <div className="w-full sm:w-9/12 text-justify">
+              <div className="w-full sm:w-9/12 ">
                 <p>{items.content}</p>
               </div>
             </div>

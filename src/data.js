@@ -27,7 +27,7 @@ export const whatWeDo = [
     id: 1,
     heading: "Education",
     content:
-      "NAFOWA operates (several) schools, including primary, secondary, and vocational schools, which provide quality education to NAF personnel's ",
+      "NAFOWA operates several schools, including primary, secondary, and vocational schools, which provide quality education to NAF personnel's ",
     imgSrc: [
       { link: "https://placehold.co/300x350/skyblue/white", alt: "place1" },
       { link: "https://placehold.co/300x350/red/white", alt: "place1" },
@@ -39,7 +39,7 @@ export const whatWeDo = [
     id: 2,
     heading: "Healthcare",
     content:
-      "NAFOWA runs (several) clinics and hospitals which provide free or subsidized medical care to NAF personnel and their families. The association also organizes health awareness campaigns and programs.",
+      "NAFOWA runs several clinics and hospitals which provide free or subsidized medical care to NAF personnel and their families. The association also organizes health awareness campaigns and programs.",
     imgSrc: [
       { link: "https://placehold.co/300x350/skyblue/white", alt: "place1" },
       { link: "https://placehold.co/300x350/yellow/white", alt: "place1" },
@@ -68,7 +68,7 @@ export const whatWeDo = [
 
     heading: "Community Development",
     content:
-      "NAFOWA undertakes (several) community development projects, such as the provision of water boreholes, schools, and hospitals. The association also supports orphanages, homes for the elderly, and other charitable organizations.",
+      "NAFOWA undertakes several community development projects, such as the provision of water boreholes, schools, and hospitals. The association also supports orphanages, homes for the elderly, and other charitable organizations.",
     imgSrc: [
       { link: "https://placehold.co/300x350/skyblue/white", alt: "place1" },
     ],
