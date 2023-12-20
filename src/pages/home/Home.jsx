@@ -13,21 +13,20 @@ export const Home = () => {
       </Carousel>
 
       {/* presidents section */}
-      <section className="w-full mx-auto flex flex-col sm:flex-row gap-32 items-center p-8   shadow-sm  shadow-lighterNafowaBlue my-12 ">
+      <section className="w-full mx-auto flex flex-col sm:flex-row gap-8 items-center p-4 my-4 ">
         <div className="relative h-full">
           <Image
-            width={400}
             className="h-full"
-            src="https://placehold.jp/08C1FF/000000/400x400.png?text=President"
+            src="https://placehold.jp/000000/000000/400x400.png?text=President"
           />
           <h3 className="text-white w-full text-center pt-10 absolute bottom-0 z-10 font-semibold">
             NAFOWA PRESIDENT
           </h3>
         </div>
 
-        <div className="w-[70%] space-y-10">
+        <div className="   space-y-4 px-4 flex-1">
           <h2 className="text-nafowaBlue">WELCOME HERE</h2>
-          <p className="text-justify">
+          <p className="text-justify text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, rem?
             Sed dolor, tempora ducimus sint, voluptates molestiae rem commodi
             autem possimus aliquid qui temporibus a nobis obcaecati facere error
@@ -42,20 +41,17 @@ export const Home = () => {
 
       {/* what we do section */}
 
-      <section className="my-8 px-10">
-        <div className="w-full space-y-5 mx-auto">
-          <h2 className="text-xl text-nafowaBlue font-bold">WHAT WE DO</h2>
-          {/* <p className=" text-lg ">
-            NAFOWA provides a wide range of services to NAF personnel and their
-            families, including:
-          </p> */}
+      <section className="my-4 px-4">
+        <div className="w-full space-y-5 mx-auto px-4">
+          <h2 className=" text-nafowaBlue ">WHAT WE DO</h2>
+
           <div className="flex justify-center flex-wrap gap-5">
             {whatWeDo.map((item) => {
               return (
                 <Card
                   hoverable
                   key={item.id}
-                  className="hover:shadow-lighterNafowaBlue border-lighterNafowaBlue hover:shadow-md w-[300px] "
+                  className="hover:shadow-gray-500 hover:shadow-md w-[300px] "
                   size="small"
                   cover={
                     <img
@@ -68,14 +64,11 @@ export const Home = () => {
                     />
                   }
                 >
-                  <h2
-                    title={item.heading}
-                    className="text-md font-bold text-nafowaBlue  line-clamp-1"
-                  >
+                  <h2 title={item.heading} className="line-clamp-1">
                     {item.heading}
                   </h2>
                   <p className="line-clamp-3">{item.content}</p>
-                  <Button type="link" className="text-nafowaBlue">
+                  <Button type="link" className="text-nafowaBlue p-0">
                     Read more
                   </Button>
                 </Card>
@@ -85,9 +78,9 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="mt-20 bg-lighterNafowaBlue h-[500px] flex items-center justify-center ">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-xl font-bold">HOW WE DO IT</h2>
+      <section className="my-20 bg-lighterNafowaBlue h-[40vh] grid place-items-center px-4 ">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-xl font-bold">HOW WE DO IT</h2> <br />
           <p className="text-lg">
             NAFOWA relies on its dedicated members and hardworking volunteers to
             carry out its mission. The association also partners with NAFHQ and

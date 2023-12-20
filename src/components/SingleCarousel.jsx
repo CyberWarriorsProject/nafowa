@@ -7,7 +7,7 @@ const SingleCarousel = ({ imgSrc, description }) => {
         {description}
       </h3>
       <div>
-        <img src={imgSrc} className="w-full min-h-[55vh] " />
+        <img src={imgSrc} className="w-full object-contain " />
       </div>
     </div>
   );

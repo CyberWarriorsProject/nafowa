@@ -1,13 +1,12 @@
 export const carouselData = [
   {
     slideID: 1,
-    imgSrc: "https://placehold.jp/08C1FF/ffffff/1536x450.png",
+    imgSrc: "/images/image1.png",
     description: " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
     slideID: 2,
-    imgSrc:
-      "https://via.placeholder.com/1536x450/FF0000/FFFFFF?text=Custom+Text",
+    imgSrc: "/images/image1.png",
     description: " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
