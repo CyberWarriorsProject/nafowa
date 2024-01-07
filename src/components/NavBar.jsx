@@ -32,8 +32,8 @@ export const NavBar = () => {
       </div>
       <Menu
         mode="horizontal"
-        className="min-w-0 justify-end flex-auto" //Width not fully responsive
-        defaultSelectedKeys="1"
+        className="min-w-0 justify-end flex-auto"
+        // defaultSelectedKeys="1"
         items={menuItems}
       />
     </Header>

@@ -25,7 +25,7 @@ export const Home = () => {
         </div>
 
         <div className="   space-y-4 px-4 flex-1">
-          <h2>WELCOME HERE</h2>
+          <h2 className="text-darkNafowaBlue">WELCOME HERE</h2>
           <p className="text-justify text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, rem?
             Sed dolor, tempora ducimus sint, voluptates molestiae rem commodi
@@ -43,7 +43,7 @@ export const Home = () => {
 
       <section className="my-4 px-4">
         <div className="w-full space-y-5 mx-auto px-4">
-          <h2 className=" text-nafowaBlue ">WHAT WE DO</h2>
+          <h2 className="text-darkNafowaBlue">WHAT WE DO</h2>
 
           <div className="flex justify-center flex-wrap gap-5">
             {whatWeDo.map((item) => {

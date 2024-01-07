@@ -21,13 +21,13 @@ export default function Vision() {
     <div className="flex flex-col lg:flex-row gap-5 md:gap-10 mx-2 md:max-w-7xl sm:mx-auto py-5 items-center justify-around mt-16">
       <Mission
         title="Vision"
-        description=" To be a leading organization (in) empowering women and contributing to the overall well-being of the (NAF) community"
+        description="NAFOWA vision is embedded in the Association’s motto which is “Service to Humanity”"
       >
         <FaHandHoldingHeart className="text-[50px] text-center text-nafowaBlue" />
       </Mission>
       <Mission
         title="Mission"
-        description="To provide support, welfare services, and the overall development of NAF personnels with their families"
+        description="To make life easy and meaningful to its members and the general public at large most especially children and women through various charity projects."
       >
         <HiOutlineLightBulb className="text-[50px] text-center text-nafowaBlue" />
       </Mission>
