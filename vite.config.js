@@ -8,6 +8,6 @@ export default defineConfig(
     server: {
       open: true,
     },
-  }
-  // (process.env.BROWSER = "firefox")
+  },
+  (process.env.BROWSER = "firefox")
 );

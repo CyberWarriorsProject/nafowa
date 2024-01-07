@@ -1,6 +1,6 @@
 import React from "react";
-import { whatWeDo } from "../data";
-import HeroOverlay from "../components/HeroOverlay";
+import { whatWeDo } from "../../data";
+import HeroOverlay from "../../components/HeroOverlay";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
@@ -23,7 +23,7 @@ export const Services = () => {
               <h1 className="text-4xl font-bold">{items.heading}</h1>
               {/* this is the paragraph div */}
               <div className="w-full sm:w-9/12 ">
-                <p>{items.content}</p>
+                <p className="text-lg my-4">{items.content}</p>
               </div>
             </div>
             <Swiper

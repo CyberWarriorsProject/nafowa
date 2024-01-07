@@ -10,19 +10,17 @@ export default function AboutUs() {
         />
       </div>
       <div className="flex-1 pt-5 2xl:pt-10">
-        <h1 className="text-[40px] font-extrabold pb-5">Who We Are</h1>
-        <p className="leading-7 text-gray-800">
+        <h1 className="text-4xl font-bold pb-5">Who We Are</h1>
+        <p className="leading-7 text-gray-800 text-lg">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
           sequi laboriosam impedit est laudantium quae qui ut illum
           exercitationem earum totam natus, eveniet, quas soluta ratione!
           Aliquam, voluptatum, ducimus libero quisquam veritatis enim officia
           quibusdam voluptates necessitatibus unde in, modi quo expedita. Fugit,
-          ipsa? Accusamus, aspernatur asperiores? Velit, aperiam illum.
-        </p>
-        <p className="leading-7 text-gray-800">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
-          sequi laboriosam impedit est laudantium quae qui ut illum
-          exercitationem earum totam natus, eveniet, quas soluta ratione!
+          ipsa? Accusamus, aspernatur asperiores? Velit, aperiam illum. Lorem
+          ipsum, dolor sit amet consectetur adipisicing elit. Expedita sequi
+          laboriosam impedit est laudantium quae qui ut illum exercitationem
+          earum totam natus, eveniet, quas soluta ratione!
         </p>
       </div>
     </div>

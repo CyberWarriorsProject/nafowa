@@ -6,26 +6,26 @@ import SingleCarousel from "../../components/SingleCarousel";
 export const Home = () => {
   return (
     <>
-      <Carousel effect="fade" autoplay>
+      <Carousel effect="fade" autoplay className="h-[60vh]">
         {carouselData.map((item) => (
           <SingleCarousel {...item} key={item.slideID} />
         ))}
       </Carousel>
 
       {/* presidents section */}
-      <section className="w-full mx-auto flex flex-col sm:flex-row gap-8 items-center p-4 my-4 ">
-        <div className="relative h-full">
+      <section className="w-full mx-auto flex flex-col sm:flex-row gap-8 items-center p-4 my-4 bg-[#CCD4D7] ">
+        <div className="h-full">
           <Image
-            className="h-full"
-            src="https://placehold.jp/000000/000000/400x400.png?text=President"
+            className="max-w-xs "
+            src="./images/WhatsApp Image 2023-12-22 at 09.58.56_cda8212a.jpg"
           />
-          <h3 className="text-white w-full text-center pt-10 absolute bottom-0 z-10 font-semibold">
+          {/* <h3 className="text-white w-full text-center pt-10 absolute bottom-0 z-10 font-semibold">
             NAFOWA PRESIDENT
-          </h3>
+          </h3> */}
         </div>
 
         <div className="   space-y-4 px-4 flex-1">
-          <h2 className="text-nafowaBlue">WELCOME HERE</h2>
+          <h2>WELCOME HERE</h2>
           <p className="text-justify text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, rem?
             Sed dolor, tempora ducimus sint, voluptates molestiae rem commodi

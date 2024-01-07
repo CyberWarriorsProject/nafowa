@@ -4,6 +4,27 @@ import { Link } from "react-router-dom";
 const { Header } = Layout;
 
 export const NavBar = () => {
+  const menuItems = [
+    { key: 1, label: <Link to="/">Home</Link> },
+    { key: 2, label: <Link to={"/about"}>About Us</Link> },
+    {
+      key: 3,
+      label: "What We Do",
+      children: [
+        {
+          key: "wwd1",
+          label: <Link to={"/services"}>Services</Link>,
+        },
+        {
+          key: "wwd2",
+          label: <Link to={"/news"}>News/Activities</Link>,
+        },
+      ],
+    },
+    ,
+    { key: 4, label: <Link to={"/contact"}>Contact Us</Link> },
+  ];
+
   return (
     <Header className="h-[80px] bg-white sticky top-0 z-50 px-10 shadow-md flex justify-between items-center ">
       <div className="demo-logo h-full ">
@@ -13,20 +34,8 @@ export const NavBar = () => {
         mode="horizontal"
         className="min-w-0 justify-end flex-auto" //Width not fully responsive
         defaultSelectedKeys="1"
-      >
-        <Menu.Item key={1}>
-          <Link to={"/"}>Home</Link>
-        </Menu.Item>
-        <Menu.Item key={2}>
-          <Link to={"/about"}>About Us</Link>
-        </Menu.Item>
-        <Menu.Item key={3}>
-          <Link to={"/services"}>What We Do</Link>
-        </Menu.Item>
-        <Menu.Item key={4}>
-          <Link to={"/contact"}>Contact Us</Link>
-        </Menu.Item>
-      </Menu>
+        items={menuItems}
+      />
     </Header>
   );
 };

@@ -2,11 +2,10 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { BsFillTelephoneFill } from "react-icons/bs";
-import { FaMapLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { Button, Form, Input } from "antd";
-import HeroOverlay from "../components/HeroOverlay";
+import HeroOverlay from "../../components/HeroOverlay";
 const { TextArea } = Input;
 
 const onFinish = (values) => {
@@ -28,8 +27,8 @@ export const Contact = () => {
 
       <div className="max-w-4xl mx-auto flex flex-justify-around  gap-20 mt-6 p-6 flex-col md:w-full md:flex-row ">
         <section className="flex flex-col gap-7 ">
-          <div className="flex flex-col">
-            <h2 className="text-3xl">Get In Touch With Us</h2>
+          <div className="flex flex-col text-lg">
+            <h2 className="text-3xl mb-4">Get In Touch With Us</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequatur, quisquam.
@@ -42,11 +41,7 @@ export const Contact = () => {
               target="_blank"
               className="text-black cursor-pointer"
             >
-              <FaFacebookSquare
-                size={25}
-                color="#0000cd"
-                borderRradius="5px;"
-              />
+              <FaFacebookSquare size={25} color="#0000cd" />
             </a>{" "}
             <a
               href=""
