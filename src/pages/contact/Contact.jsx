@@ -28,11 +28,13 @@ export const Contact = () => {
       <div className="max-w-4xl mx-auto flex flex-justify-around  gap-20 mt-6 p-6 flex-col md:w-full md:flex-row ">
         <section className="flex flex-col gap-7 ">
           <div className="flex flex-col text-lg">
-            <h2 className="text-3xl mb-4">Get In Touch With Us</h2>
-            <p>
+            <h2 className="text-3xl mb-4 text-darkNafowaBlue">
+              Get In Touch With Us
+            </h2>
+            {/* <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequatur, quisquam.
-            </p>
+            </p> */}
           </div>
 
           <div className="flex gap-5 ">

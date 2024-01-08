@@ -39,10 +39,7 @@ export const whatWeDo = [
     heading: "Healthcare",
     content:
       "NAFOWA runs several clinics and hospitals which provide free or subsidized medical care to NAF personnel and their families. The association also organizes health awareness campaigns and programs.",
-    imgSrc: [
-      { link: "images/IMG-20231222-WA0038.jpg", alt: "place1" },
-      { link: "https://placehold.co/300x200/yellow/white", alt: "place1" },
-    ],
+    imgSrc: [{ link: "images/IMG-20231222-WA0038.jpg", alt: "place1" }],
   },
   {
     id: 3,
@@ -50,10 +47,7 @@ export const whatWeDo = [
     heading: "Skills Acquisition and Empowerment",
     content:
       "NAFOWA provides skills acquisition and empowerment programs to NAF personnel's wives and other women in the communities where NAF bases are located. These programs are designed to help women become financially independent and contribute to their families' well-being.",
-    imgSrc: [
-      { link: "images/IMG-20231222-WA0030.jpg", alt: "place1" },
-      { link: "https://placehold.co/300x200/purple/white", alt: "place1" },
-    ],
+    imgSrc: [{ link: "images/IMG-20231222-WA0030.jpg", alt: "place1" }],
   },
   {
     id: 4,

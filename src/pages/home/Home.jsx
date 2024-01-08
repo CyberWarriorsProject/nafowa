@@ -24,9 +24,9 @@ export const Home = () => {
           </h3> */}
         </div>
 
-        <div className="   space-y-4 px-4 flex-1">
+        <div className="space-y-4 px-4 flex-1">
           <h2 className="text-darkNafowaBlue">WELCOME HERE</h2>
-          <p className="text-justify text-lg">
+          <p className="text-justify text-base">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, rem?
             Sed dolor, tempora ducimus sint, voluptates molestiae rem commodi
             autem possimus aliquid qui temporibus a nobis obcaecati facere error

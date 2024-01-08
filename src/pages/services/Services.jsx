@@ -20,12 +20,12 @@ export const Services = () => {
           <section key={items.id}>
             <div className="max-w-4xl">
               {/* This is the heading element */}
-              <h1 className="text-4xl font-bold text-darkNafowaBlue">
+              <h1 className="text-3xl font-bold text-darkNafowaBlue">
                 {items.heading}
               </h1>
               {/* this is the paragraph div */}
               <div className="w-full sm:w-9/12 ">
-                <p className="text-lg my-4">{items.content}</p>
+                <p className="text-base my-4">{items.content}</p>
               </div>
             </div>
             <Swiper

@@ -11,10 +11,10 @@ export default function AboutUs() {
           />
 
           <div className="flex-1 pt-5 2xl:pt-10">
-            <h1 className="text-4xl font-bold pb-5 text-darkNafowaBlue">
+            <h1 className="text-3xl font-bold pb-5 text-darkNafowaBlue">
               Who We Are
             </h1>
-            <p className="leading-7 text-gray-800 text-lg">
+            <p className="leading-7 text-gray-800 text-base">
               The Nigerian Air Force Officers’ Wives Association (NAFOWA) whose
               motto is “Service to Humanity” is a philanthropic,
               Non-Governmental Organization whose membership is voluntary and
@@ -30,7 +30,7 @@ export default function AboutUs() {
             </p>
           </div>
         </div>
-        <div className="leading-7 text-gray-800 text-lg mt-4">
+        <div className="leading-7 text-gray-800 text-base mt-4">
           <p>
             The Association started as an informal Tea Party organized to
             exchange pleasantries and subsequently became a regular meeting with
