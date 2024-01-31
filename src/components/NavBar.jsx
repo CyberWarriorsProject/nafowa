@@ -28,7 +28,9 @@ export const NavBar = () => {
   return (
     <Header className="h-[80px] bg-white sticky top-0 z-50 px-10 shadow-md flex justify-between items-center ">
       <div className="demo-logo h-full ">
-        <img className="h-full object-contain " src="/images/logo.jpeg" />
+        <Link to={"/"}>
+          <img className="h-full object-contain " src="/images/logo.jpeg" />
+        </Link>
       </div>
       <Menu
         mode="horizontal"
