@@ -13,6 +13,7 @@
     "@fontsource/roboto": "^5.0.8",
     "@fontsource/roboto-condensed": "^5.0.13",
     "antd": "^5.11.5",
+    "aos": "^2.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",

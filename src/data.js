@@ -2,22 +2,26 @@ export const carouselData = [
   {
     slideID: 1,
     imgSrc: "/images//IMG-20231222-WA0014.jpg",
-    description: " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    description:
+      " The National President, Nigerian Air Force Officers’ Wives Association (NAFOWA), Architect (Mrs) Rakiya Abubakar has solicited the continued support and collaboration of the Nigerian Air Force (NAF) with NAFOWA in the areas of education, women and youth empowerment, healthcare and poverty alleviation in line with its motto of, “Service to Humanity”. She stated this today, 2 August 2023, when she paid a courtesy visit to the Chief of the Air Staff (CAS), Air Marshal Hasan Abubakar at the Headquarters NAF (HQ NAF), Abuja. Mrs Abubakar, who was accompanied by other members of the Association, appreciated the CAS for the support and encouragement they have received so far noting that the Association was willing, able and ready to contribute i",
   },
   {
     slideID: 2,
     imgSrc: "/images/IMG-20231222-WA0023.jpg",
-    description: " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    description:
+      "The NAFOWA National President, Arc. Mrs. Rakiya Abubakar has paid a courtesy visit to the DEPOWA President, Mrs. Oghogho Musa in a bid to foster collaboration between the two organizations. The meeting took place at the DEPOWA headquarters today 25th of August 2023 and aimed to discuss possible areas of partnership and joint initiatives. During the meeting, Mrs. Abubakar expressed her gratitude to the DEPOWA President for hosting her and emphasized the importance of collaboration between NAFOWA (Nigerian Air Force Officers' Wives Association) and DEPOWA (Defence and Police Officers' Wives Association). She highlighted their shared objective of supporting the families of military personnel especially the families of personnel who paid the supreme prize while serving the nation and their dedication to community development initiatives. Mrs Abubakar added that both organizations have a long history of supporting the welfare and well-being of military families. She stated that NAFOWA has been instrumental in providing sc",
   },
   {
     slideID: 3,
     imgSrc: "/images/IMG-20231222-WA0041.jpg",
-    description: " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    description:
+      "NAFOWA provides skills acquisition and empowerment programs to NAF personnel's wives and other women in the communities where NAF bases are located. These programs are designed to help women become financially independent and contribute to their families' well-being.",
   },
   {
     slideID: 4,
     imgSrc: "/images/IMG-20231222-WA0062.jpg",
-    description: " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    description:
+      "NAFOWA runs several clinics and hospitals which provide free or subsidized medical care to NAF personnel and their families. The association also organizes health awareness campaigns and programs.",
   },
 ];
 
