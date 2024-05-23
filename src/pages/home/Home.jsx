@@ -6,23 +6,23 @@ import SingleCarousel from "../../components/SingleCarousel";
 export const Home = () => {
   return (
     <>
-      <Carousel effect="fade" autoplay>
+      <Carousel effect="fade" autoplay className="shadow-2xl shadow-blue-100">
         {carouselData.map((item) => (
           <SingleCarousel {...item} key={item.slideID} />
         ))}
       </Carousel>
 
       {/* presidents section */}
-      <section className="w-full mx-auto flex flex-col sm:flex-row gap-8 items-center p-4 my-4 bg-[#CCD4D7] ">
+      <section
+        className="w-full mx-auto flex flex-col sm:flex-row gap-8 items-center p-4 my-4 bg-blue-50 shadow-2xl shadow-blue-50"
+        data-aos="fade-right"
+      >
         <div className="h-full">
           <Image
             className="max-w-xs "
             src="./images/WhatsApp Image 2023-12-22 at 09.58.56_cda8212a.jpg"
             data-aos="zoom-out-right"
           />
-          {/* <h3 className="text-white w-full text-center pt-10 absolute bottom-0 z-10 font-semibold">
-            NAFOWA PRESIDENT
-          </h3> */}
         </div>
 
         <div className="space-y-4 px-4 flex-1" data-aos="fade-right">
@@ -41,23 +41,21 @@ export const Home = () => {
             of the wider air force community and the general public especially
             the less-privileged.
           </p>
-          {/* <Button type="primary">Read more</Button> */}
         </div>
       </section>
 
       {/* what we do section */}
 
-      <section className="my-4 px-4">
+      <section className="my-4 px-4 py-4 shadow-xl shadow-blue-50">
         <div className="w-full space-y-5 mx-auto px-4">
           <h2 className="text-darkNafowaBlue">WHAT WE DO</h2>
-
-          <div className="flex justify-center flex-wrap gap-5">
+          <div className="flex justify-center flex-wrap gap-5 ">
             {whatWeDo.map((item) => {
               return (
                 <Card
                   hoverable
                   key={item.id}
-                  className="hover:shadow-gray-500 hover:shadow-md w-[300px] "
+                  className="hover:shadow-gray-500 hover:shadow-md w-[300px] text-gray-600 hover:text-black"
                   size="small"
                   cover={
                     <img
@@ -75,7 +73,7 @@ export const Home = () => {
                     {item.heading}
                   </h2>
                   <p className="line-clamp-3">{item.content}</p>
-                  <Button type="link" className="text-nafowaBlue p-0">
+                  <Button type="link" className="text-darkNafowaBlue p-0">
                     Read more
                   </Button>
                 </Card>
@@ -85,7 +83,7 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="my-20 bg-lighterNafowaBlue h-[40vh] grid place-items-center px-4 ">
+      <section className=" bg-blue-50 h-[40vh] grid place-items-center px-4 ">
         <div className="max-w-4xl mx-auto px-4" data-aos="fade-up">
           <h2 className="text-xl font-bold">HOW WE DO IT</h2> <br />
           <p className="text-lg">

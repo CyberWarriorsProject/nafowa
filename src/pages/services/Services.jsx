@@ -31,14 +31,14 @@ export const Services = () => {
             <Swiper
               loop={true}
               spaceBetween={20}
-              // centeredSlides={true}
               autoplay={{
                 delay: 2500,
                 disableOnInteraction: false,
               }}
               navigation={true}
+              centeredSlides={true}
               modules={[Autoplay, Navigation]}
-              className="mySwiper my-12 px-16 text-center max-w-7xl border-4 border-red-700"
+              className="my-12 sm:px-16 max-w-7xl "
               slidesPerView={1}
               breakpoints={{
                 660: {
@@ -52,7 +52,7 @@ export const Services = () => {
                 },
               }}
               style={{
-                "--swiper-navigation-color": "black",
+                "--swiper-navigation-color": "gray",
               }}
             >
               {items.imgSrc.map((imgItem) => (
@@ -60,7 +60,7 @@ export const Services = () => {
                   <img
                     src={imgItem.link}
                     alt={imgItem.alt}
-                    className="object-contain rounded-2xl w-full"
+                    className="object-fit rounded w-full"
                   />
                 </SwiperSlide>
               ))}

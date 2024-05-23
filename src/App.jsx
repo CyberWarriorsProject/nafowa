@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
 import { MainLayout } from "./layouts/MainLayout";
 import { NotFound } from "./components/NotFound";
 import { Home } from "./pages/home/Home";
