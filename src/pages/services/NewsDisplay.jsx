@@ -37,7 +37,9 @@ const NewsDisplay = () => {
         >
           <Content className="text-center min-h-[60vh] p-8">
             <h1>{currentNews.newsTitle}</h1>
-            <div className="mt-4 leading-6">{currentNews.newsDescription}</div>
+            <div className="mt-4 leading-6 text-justify">
+              {currentNews.newsDescription}
+            </div>
             <div className="flex flex-wrap gap-4 m-8 justify-center">
               {currentNews.newsImages.map((image) => (
                 <Image
@@ -51,7 +53,7 @@ const NewsDisplay = () => {
             </div>
           </Content>
           <Flex style={{ minWidth: "25%" }}>
-            <Sider className="text-center text-white p-4" width="100%">
+            <Sider className="text-center text-white p-4" width="100% ">
               <h3 className="text-center text-white">Also Read:</h3> <br />
               <ul className="list-none text-left ">
                 {news.map((item) => {

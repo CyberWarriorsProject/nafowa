@@ -32,10 +32,10 @@ export const whatWeDo = [
     content:
       "NAFOWA operates several schools, including primary, secondary, and vocational schools, which provide quality education to NAF personnel's ",
     imgSrc: [
-      { link: "images/IMG-20231222-WA0021.jpg", alt: "place1" },
-      { link: "images/IMG-20231222-WA0022.jpg", alt: "place1" },
-      { link: "images/IMG-20231222-WA0024.jpg", alt: "place1" },
-      { link: "images/IMG-20231222-WA0027.jpg", alt: "place1" },
+      { link: "/images/IMG-20231222-WA0021.jpg", alt: "place1" },
+      { link: "/images/IMG-20231222-WA0022.jpg", alt: "place1" },
+      { link: "/images/IMG-20231222-WA0024.jpg", alt: "place1" },
+      { link: "/images/IMG-20231222-WA0027.jpg", alt: "place1" },
     ],
   },
   {
@@ -43,7 +43,7 @@ export const whatWeDo = [
     heading: "Healthcare",
     content:
       "NAFOWA runs several clinics and hospitals which provide free or subsidized medical care to NAF personnel and their families. The association also organizes health awareness campaigns and programs.",
-    imgSrc: [{ link: "images/IMG-20231222-WA0038.jpg", alt: "place1" }],
+    imgSrc: [{ link: "/images/IMG-20231222-WA0038.jpg", alt: "place1" }],
   },
   {
     id: 3,
@@ -51,7 +51,7 @@ export const whatWeDo = [
     heading: "Skills Acquisition and Empowerment",
     content:
       "NAFOWA provides skills acquisition and empowerment programs to NAF personnel's wives and other women in the communities where NAF bases are located. These programs are designed to help women become financially independent and contribute to their families' well-being.",
-    imgSrc: [{ link: "images/IMG-20231222-WA0030.jpg", alt: "place1" }],
+    imgSrc: [{ link: "/images/IMG-20231222-WA0030.jpg", alt: "place1" }],
   },
   {
     id: 4,
@@ -60,11 +60,11 @@ export const whatWeDo = [
     content:
       "NAFOWA undertakes several community development projects, such as the provision of water boreholes, schools, and hospitals. The association also supports orphanages, homes for the elderly, and other charitable organizations.",
     imgSrc: [
-      { link: "images/IMG-20231222-WA0026.jpg", alt: "place1" },
-      { link: "images/IMG-20231222-WA0051.jpg", alt: "place1" },
-      { link: "images/IMG-20231222-WA0058.jpg", alt: "place1" },
-      { link: "images/IMG-20231222-WA0056.jpg", alt: "place1" },
-      { link: "images/IMG-20231222-WA0060.jpg", alt: "place1" },
+      { link: "/images/IMG-20231222-WA0026.jpg", alt: "place1" },
+      { link: "/images/IMG-20231222-WA0051.jpg", alt: "place1" },
+      { link: "/images/IMG-20231222-WA0058.jpg", alt: "place1" },
+      { link: "/images/IMG-20231222-WA0056.jpg", alt: "place1" },
+      { link: "/images/IMG-20231222-WA0060.jpg", alt: "place1" },
     ],
   },
 ];
@@ -77,11 +77,11 @@ export const news = [
     newsDescription:
       "The National President, Nigerian Air Force Officers’ Wives Association (NAFOWA), Architect (Mrs) Rakiya Abubakar has solicited the continued support and collaboration of the Nigerian Air Force (NAF) with NAFOWA in the areas of education, women and youth empowerment, healthcare and poverty alleviation in line with its motto of, “Service to Humanity”. She stated this today, 2 August 2023, when she paid a courtesy visit to the Chief of the Air Staff (CAS), Air Marshal Hasan Abubakar at the Headquarters NAF (HQ NAF), Abuja. Mrs Abubakar, who was accompanied by other members of the Association, appreciated the CAS for the support and encouragement they have received so far noting that the Association was willing, able and ready to contribute its quota to the overall success of the Service. While congratulating the CAS on appointment, promotion and subsequent decoration with the rank of Air Marshal by the President, Commander-in-Chief of the Armed Forces, Bola Ahmed Tinubu, Mrs Abubakar stated that she and members of her Association were at the HQ NAF to consolidate on the existing cordial relationship between the NAF and NAFOWA. She reaffirmed the unalloyed loyalty and support of the Association to the NAF. “We are willing, able and ready to contribute our quota in complementing efforts of the Service”, she said. Speaking further, she emphasized that the Association’s overall objective remains the promotion of welfare and wellbeing of its members, children and the less privileged in the society through education and various skills acquisition programmes. Mrs Abubakar also solicited the support of the NAF in the provision of needed infrastructure at the newly established NAFOWA Secondary School and NAFOWA Little Angeles, Asokoro, Abuja. In his remarks, the CAS described members of NAFOWA as pillars of strength, unsung heroes and source of motivation to their husbands and families.  According to him, the Association has contributed immensely to the educational sector of the Country through the NAFOWA Little Angels Schools and vocational centres. The skills acquisition and empowerment programmes he said, have been impactful and within the last 12 months, has benefited over 300 dependents, providing them with various skills including catering, event decoration, soap making, embroidery and tailoring amongst others. While recognizing some of the challenges facing the members occasioned by frequent postings and relocations as well as long absence of their husbands, Air Marshal Abubakar urged them to derive strength from their unity as a community. According to the CAS, “When you come together under one umbrella, your synergy as women is unrivalled and amazing.” The CAS also charged them to remain a network of support and beacon of hope to those in despair and others who might be going through other challenges. Architect (Mrs) Rakiya Abubakar was accompanied by the National Executive Council members of NAFOWA and other members while the Branch Chiefs and Precedent Directors at NAF HQ.",
     newsImages: [
-      { link: "images/IMG-20231222-WA0021.jpg", alt: "place1" },
-      { link: "images/IMG-20231222-WA0051.jpg", alt: "place1" },
-      { link: "images/IMG-20231222-WA0058.jpg", alt: "place1" },
-      { link: "images/IMG-20231222-WA0056.jpg", alt: "place1" },
-      { link: "images/IMG-20231222-WA0060.jpg", alt: "place1" },
+      { link: "/images/IMG-20231222-WA0021.jpg", alt: "place1" },
+      { link: "/images/IMG-20231222-WA0051.jpg", alt: "place1" },
+      { link: "/images/IMG-20231222-WA0058.jpg", alt: "place1" },
+      { link: "/images/IMG-20231222-WA0056.jpg", alt: "place1" },
+      { link: "/images/IMG-20231222-WA0060.jpg", alt: "place1" },
     ],
     category: "News",
   },
@@ -91,11 +91,11 @@ export const news = [
     newsDescription:
       "The NAFOWA National President, Arc. Mrs. Rakiya Abubakar has paid a courtesy visit to the DEPOWA President, Mrs. Oghogho Musa in a bid to foster collaboration between the two organizations. The meeting took place at the DEPOWA headquarters today 25th of August 2023 and aimed to discuss possible areas of partnership and joint initiatives. During the meeting, Mrs. Abubakar expressed her gratitude to the DEPOWA President for hosting her and emphasized the importance of collaboration between NAFOWA (Nigerian Air Force Officers' Wives Association) and DEPOWA (Defence and Police Officers' Wives Association). She highlighted their shared objective of supporting the families of military personnel especially the families of personnel who paid the supreme prize while serving the nation and their dedication to community development initiatives. Mrs Abubakar added that both organizations have a long history of supporting the welfare and well-being of military families. She stated that NAFOWA has been instrumental in providing scholarships, healthcare, and skills acquisition programs to benefit its members and the larger military community while adding that DEPOWA, on the other hand, has also undertaken various projects aimed at empowering and uplifting the families of defense and police personnel. She urged DEPOWA members to take advantage of NAFOWA facilities which include the Cancer Screening Center, School for the Special Needs and other NAFOWA Schools across the country while emphasizing on giving special discounts to members whenever the need arises. 'This noble endeavor is pursued through our various initiatives, skills acquisition programs and strategic collaborations with relevant stakeholders. Notably, we take pride in our establishment of the school for children with special needs, as it is a vital stepping stone in ensuring that our children are not denied certain opportunities because of their special needs. Additionally; our Cancer screening center which is aimed at early cancer detection, especially in young girls'. Responing, the DEPOWA President, Mrs Oghogho while paying tribute to the fallen heroes expressed her desire for NAFOWA and DEPOWA to consider engaging in advocacy work together, addressing key issues affecting military families at the national level. By leveraging their collective influence, she said they could bring attention to important matters such as improved healthcare, education, and welfare support for military personnel and their families. As the meeting concluded, both presidents expressed enthusiasm for the proposed collaboration and committed to further discussions to solidify the partnership. They agreed to assess potential joint initiatives and present a roadmap for future collaboration to their respective executive committees. The visit by the NAFOWA National President to DEPOWA marks a significant step towards strengthening the relationship between these two organizations. With their shared vision and commitment, NAFOWA and DEPOWA are poised to maximize their impact in supporting the welfare and well-being of military families nationwide. The NAFOWA president was accompanied by the National executive and some members",
     newsImages: [
-      { link: "images/IMG-20231222-WA0026.jpg", alt: "place1" },
-      { link: "images/IMG-20231222-WA0051.jpg", alt: "place1" },
-      { link: "images/IMG-20231222-WA0021.jpg", alt: "place2" },
-      { link: "images/IMG-20231222-WA0056.jpg", alt: "place1" },
-      { link: "images/IMG-20231222-WA0060.jpg", alt: "place1" },
+      { link: "/images/IMG-20231222-WA0026.jpg", alt: "place1" },
+      { link: "/images/IMG-20231222-WA0051.jpg", alt: "place1" },
+      { link: "/images/IMG-20231222-WA0021.jpg", alt: "place2" },
+      { link: "/images/IMG-20231222-WA0056.jpg", alt: "place1" },
+      { link: "/images/IMG-20231222-WA0060.jpg", alt: "place1" },
     ],
     category: "Event",
   },

@@ -20,7 +20,10 @@ export const Services = () => {
           <section key={items.id}>
             <div className="max-w-4xl">
               {/* This is the heading element */}
-              <h1 className="text-3xl font-bold text-darkNafowaBlue">
+              <h1
+                className="text-3xl font-bold text-darkNafowaBlue"
+                id={items.heading}
+              >
                 {items.heading}
               </h1>
               {/* this is the paragraph div */}

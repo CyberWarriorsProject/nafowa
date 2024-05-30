@@ -14,6 +14,8 @@ export default {
     fontFamily: {
       sans: ["Roboto", "sans-serif"],
       serif: ["Merriweather", "serif"],
+      mogra: ["Mogra", "system-ui"],
+      badscript: ["Bad Script", "cursive"],
     },
   },
   plugins: [],

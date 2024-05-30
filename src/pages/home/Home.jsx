@@ -2,10 +2,39 @@ import { Button, Card, Carousel, Image } from "antd";
 import React from "react";
 import { carouselData, whatWeDo } from "../../data";
 import SingleCarousel from "../../components/SingleCarousel";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Autoplay, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Link } from "react-router-dom";
+import "@fontsource/mogra";
 
 export const Home = () => {
   return (
     <>
+      {/* <Swiper
+        loop={true}
+        autoplay={{
+          disableOnInteraction: false,
+        }}
+        navigation={true}
+        modules={[Autoplay, Navigation]}
+        className="w-full shadow-2xl shadow-blue-100"
+        style={{
+          "--swiper-navigation-color": "gray",
+        }}
+      >
+        {carouselData.map((imgItem) => (
+          <SwiperSlide key={imgItem.slideID} className="h-[60vh]">
+            <img
+              src={imgItem.imgSrc}
+              alt={imgItem.description}
+              className="object-cover w-full h-full"
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper> */}
+
       <Carousel effect="fade" autoplay className="shadow-2xl shadow-blue-100">
         {carouselData.map((item) => (
           <SingleCarousel {...item} key={item.slideID} />
@@ -26,7 +55,7 @@ export const Home = () => {
         </div>
 
         <div className="space-y-4 px-4 flex-1" data-aos="fade-right">
-          <h2 className="text-darkNafowaBlue">WELCOME HERE</h2>
+          <h2 className="text-gray-700 text-3xl font-mogra ">WELCOME HERE</h2>
           <p className="text-justify text-base">
             The Nigerian Air Force Officers’ Wives Association (NAFOWA) whose
             motto is “Service to Humanity” is a philanthropic, Non-Governmental
@@ -46,9 +75,11 @@ export const Home = () => {
 
       {/* what we do section */}
 
-      <section className="my-4 px-4 py-4 shadow-xl shadow-blue-50">
+      <section className="my-4 px-4 py-4 shadow-2xl shadow-blue-50">
         <div className="w-full space-y-5 mx-auto px-4">
-          <h2 className="text-darkNafowaBlue">WHAT WE DO</h2>
+          <h2 className="text-gray-700 text-center mb-12 font-mogra text-4xl">
+            What We Do
+          </h2>
           <div className="flex justify-center flex-wrap gap-5 ">
             {whatWeDo.map((item) => {
               return (
@@ -73,9 +104,8 @@ export const Home = () => {
                     {item.heading}
                   </h2>
                   <p className="line-clamp-3">{item.content}</p>
-                  <Button type="link" className="text-darkNafowaBlue p-0">
-                    Read more
-                  </Button>
+
+                  <Link to={`/services/#${item.heading}`}>Read more</Link>
                 </Card>
               );
             })}
@@ -83,9 +113,12 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className=" bg-blue-50 h-[40vh] grid place-items-center px-4 ">
+      {/* How we do it section */}
+
+      <section className=" bg-blue-50 h-[40vh] grid place-items-center px-4 shadow-2xl shadow-blue-50 mb-4">
         <div className="max-w-4xl mx-auto px-4" data-aos="fade-up">
-          <h2 className="text-xl font-bold">HOW WE DO IT</h2> <br />
+          <h2 className="text-3xl text-gray-700 font-mogra">HOW WE DO IT</h2>{" "}
+          <br />
           <p className="text-lg">
             NAFOWA relies on its dedicated members and hardworking volunteers to
             carry out its mission. The association also partners with NAFHQ and

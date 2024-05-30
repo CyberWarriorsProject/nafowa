@@ -6,6 +6,7 @@ import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { Button, Form, Input } from "antd";
 import HeroOverlay from "../../components/HeroOverlay";
+
 const { TextArea } = Input;
 
 const onFinish = (values) => {
@@ -17,7 +18,7 @@ const onFinishFailed = (errorInfo) => {
 
 export const Contact = () => {
   return (
-    <div>
+    <>
       <HeroOverlay
         pageTitle={"Contact Us"}
         overlayURL={
@@ -130,13 +131,17 @@ export const Contact = () => {
             </Form.Item>
 
             <Form.Item>
-              <Button className="bg-nafowaBlue text-white font-semibold" block>
+              <Button
+                className="bg-nafowaBlue text-white font-semibold"
+                block
+                disabled
+              >
                 Send
               </Button>
             </Form.Item>
           </Form>
         </section>
       </div>
-    </div>
+    </>
   );
 };
